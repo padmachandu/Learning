@@ -1,0 +1,23 @@
+readonly and const variables
+const and readonly both prevent modification, but they have key differences in when and how they are assigned."
+
+const 
+A const variable must be assigned a value at the time of declaration and cannot be changed later. It is implicitly static and shared across all instances of the class."
+readonly
+"A readonly variable can be assigned a value at runtime, either when declared or inside the constructor, but once assigned, it cannot be changed."
+
+If the value is fixed forever, use const. If it’s set during object creation and never changes, use readonly."
+
+class MathConstants
+{
+    public const double Pi = 3.14159;  // Must be assigned at compile time
+}
+class Circle
+{
+    public readonly double Radius;  // Assigned at runtime
+
+    public Circle(double radius)
+    {
+        Radius = radius;  // Can be assigned here
+    }
+}
