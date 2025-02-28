@@ -1,0 +1,13 @@
+ref and out keywords - By using ref and out keywords we can pass the parameters by reference.
+when you want to return more than values from a method you can use out and ref parameters. 
+
+ref and out are both used to pass arguments by reference, meaning any changes made inside the method affect the original variable outside.
+However, the key difference is initialization:"
+ref requires the variable to be initialized before passing it.
+out does not require initialization; the method must assign a value before returning.
+
+"For example, if I have a method that modifies an existing value, I use ref. If I have a method that returns multiple values and doesn't need an initial value, I use out."
+
+void ModifyValue(ref int num) { num += 10; }
+int value = 5;
+ModifyValue(ref value); // value becomes 15
