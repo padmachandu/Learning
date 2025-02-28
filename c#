@@ -11,3 +11,7 @@ out does not require initialization; the method must assign a value before retur
 void ModifyValue(ref int num) { num += 10; }
 int value = 5;
 ModifyValue(ref value); // value becomes 15
+
+void GetValues(out int x, out int y) { x = 10; y = 20; }
+int a, b;
+GetValues(out a, out b); // a = 10, b = 20
