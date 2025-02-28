@@ -15,3 +15,8 @@ ModifyValue(ref value); // value becomes 15
 void GetValues(out int x, out int y) { x = 10; y = 20; }
 int a, b;
 GetValues(out a, out b); // a = 10, b = 20
+
+In C#, parameters can be passed in two ways: Pass by Value and Pass by Reference (Address)."
+
+Pass by Value: A copy of the variable is passed to the method, so changes inside the method do not affect the original variable.
+Pass by Reference (Address): A reference (memory address) to the original variable is passed, so changes inside the method do affect the original variable.
