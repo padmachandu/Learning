@@ -18,8 +18,25 @@ export service MyService{
 How to consume service in a component 
 
 @component({
-selector: 'app-my-component'
-template:  './mycomponent.compoent.html'
-templateUrls: 
+selector: 'app-my-component',
+template:  './mycomponent.compoent.html',
+templateUrls: ['./mycomponent.compoennt.css'],
 providers: [MyService]
 })
+ccnstructor(private _myService:MyService){ }
+students: any[];
+
+ngOnInit()
+{
+  this.students = this._myService.getAllStudents();
+}
+
+Advantages:
+
+1. Re-usability
+
+
+
+
+
+
