@@ -1,1 +1,20 @@
 What is a module in angular??
+Module is a container in an angular applications. Grouping of related components, directives, modules, pipes , services etc is nothing but a module in angular.
+
+Why we need module in angular application??
+To uniquely identify or group components, directives , pipes , services used with in the component.
+
+import {NgModule} from '@angular/core';
+import {FormsModule} from '@angular/forms';
+import {BrowserModule} from '@angular/platform-browser';
+
+@NgModule({
+declarations:[AppComponent],
+imports: [
+FormsModule,
+BrowserModule
+],
+providers: [MyService],
+bootstrap: [AppComponent]
+})
+export class AppModule{}
