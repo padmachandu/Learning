@@ -1,1 +1,34 @@
+What is Angular and what is the difference between Angular and Angular JS??
+---------------------------------------------------------------------------------
+Angular is an open source-framework for developing the dynamic and single page applications.
+It's free and open source developed by google.
+It has a component based architecture.
+It uses typescript
+
+Featurees of angular
+--------------------
+1. Two way data-binding
+2. Dependency injection
+3. AOT compilation
+4. Change detection staretegy or mechanism
+5. Reusability using services
+6. Component-based architecture
+7. Great support for Testability/Testing 
+
+Angular js    Angular
+---------------------
+Angular is a component-based architecture, anguar js is a MVC based architecture.
+Angular has dependency injection angular js doen't have depenedency injection.
+Angular uses both javascript and typescript where as angular js uses javascript only.
+Angular is fast due to it's DI. Angular js is slow compared to Angular
+Angular has built in CLI (Command Line interface) to create componnts, services, directives and pipes etc.
+Angular has mobile support where as angular js doen't support mobile browsers.
+
+
+EX: ng generate component component-name
+ng g c component-name 
+
+
+
+
 
