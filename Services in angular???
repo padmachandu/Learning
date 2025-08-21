@@ -11,6 +11,12 @@ Example:
 --------
 import {@Injectable} from '@angular/core';
 
+@Injectable()({
+providedIn : 'root'
+}) 
+Note: // If you declare it as root then no need to provide in the providers section of a component.
+------ 
+( or )
 @Injectable()
 export service MyService{
 //Methods and proerties
