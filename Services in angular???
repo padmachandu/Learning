@@ -1,0 +1,25 @@
+What is a service in angular??
+------------------------------
+
+Services are piece of code which performs a specific task. Services consist s of the reusable logic that been consumed in multiple places. 
+when we will go for a service?
+
+We will create a service for re-usability. If the same logic has been consumedby multiple compoennets then we will include the logic in a service and cosume it 
+in the application or a component. We will inject the created services to the pplication or component using dependency injection mechanism.
+
+Example:
+--------
+import {@Injectable} from '@angular/core';
+
+@Injectable()
+export service MyService{
+//Methods and proerties
+}
+How to consume service in a component 
+
+@component({
+selector: 'app-my-component'
+template:  './mycomponent.compoent.html'
+templateUrls: 
+providers: [MyService]
+})
