@@ -5,12 +5,17 @@ A component is a typscripte class which contains methods and properties to be co
 
 import {compoennt} from '@angular/core';
 
-@compoennt({
+@component({
 selector: "app-root"
 templateUrl: "/app.component.html"
 styleUrls: [/app.compoennt.scss]
 })
 
 export class AppComponent {
-title: string = "Hello";
+title: string = 'Hello';
 }
+
+Compoennt Life cycle hoooks:
+Constructor()
+ngOn
+
