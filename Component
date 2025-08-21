@@ -1,0 +1,16 @@
+What is a component in angular
+Components are the basic buiding blocks of an angular application. It's the one of the key features of an angular application.
+Angular is a compoennt - based architecture. It divides the application into smaller and re-usable user interfaces called compoennts.
+A component is a typscripte class which contains methods and properties to be consumed by html template/view.
+
+import {compoennt} from '@angular/core';
+
+@compoennt({
+selector: "app-root"
+templateUrl: "/app.component.html"
+styleUrls: [/app.compoennt.scss]
+})
+
+export class AppComponent {
+title: string = "Hello";
+}
