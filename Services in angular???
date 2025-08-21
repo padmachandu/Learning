@@ -39,8 +39,9 @@ ngOnInit()
 
 Advantages:
 
-1. Re-usability
+1. Code Re-usability
 2. Useful in Fetching the data from the API's, Managing the state, and handle the user authentication. 
+3. We can communicate between the components using service.
 
 
 
