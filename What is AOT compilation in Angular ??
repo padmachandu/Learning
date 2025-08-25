@@ -1,0 +1,4 @@
+What is AOT compilation in Angular ??
+https://www.youtube.com/watch?v=CefpOrZF4Uw
+Process of converting angular application code into javascript code during build phase before the application is deployed into client's browser.
+In JIT angular code is compiled in the client's browser at run time.
