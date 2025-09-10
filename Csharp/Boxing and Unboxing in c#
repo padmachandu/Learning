@@ -1,1 +1,13 @@
+Boxing : Process of converting value type (int, char, float) to reference type (objects)
+Unboxing : Process of converting reference type to value type called unboxing 
+
+Example:
+Boxing:
+------
+int i = 100;
+object iobj = i; //boxing
+i = 200;
+int j = (int) iobj; //Unboxing
+UnBoxing:
+---------
 
