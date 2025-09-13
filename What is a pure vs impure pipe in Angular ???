@@ -20,7 +20,13 @@ What is an impure pipe???
 An impure pipe is a pipe which gets called for every change detection cycle. And it is performs instensive.
 
 We shoud not use pipes for filtering and sorting due to it's inconsistent behavior.
-We should not use impure pipes in our applicaion as it gets called for every change detection cycle. which leads to performance issues.
+We should not use impure pipes in our applicaion as it gets called for every change detection cycle.
+which leads to performance issues.
+
+What is an async pipe ??
+
+Async pipe subscribes to an observable or promise and returns the latest value emitted.
+
 
 
 
