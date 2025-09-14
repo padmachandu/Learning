@@ -1,1 +1,72 @@
+1) How to improve the performance of an angular application or How to optimize angular application performance ???
 
+1. Use the OnPush change detection strategy
+ --- With OnPush, Angular only checks when @Input changes or an event is triggered.
+@Component({
+  selector: 'app-user',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: `{{ user.name }}`
+})
+export class UserComponent {
+  @Input() user!: User;
+}
+2. Implement lazy loading to load modules when needed
+ -- Load feature modules on demand instaead of loading everything at startup.
+
+{
+  path: 'admin',
+  loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule)
+}
+3. Use trackBy with ngFor to optimize DOM rendering
+   - Prevents re-rendering of the entire list when only one item changes
+
+<li *ngFor="let item of items; trackBy: trackById">{{ item.name }}</li>
+trackById(index: number, item: any): number { return item.id; }
+
+4. Avoid memory leakes
+  ---- Always unsubscribe from observables (or use async pipe which handles it automatically)
+ngOnDestroy(){
+  this.subscription.unsubscribe();
+}
+5. Enable AOT compilation for faster rendering
+
+2) What’s the difference between a resolver and a guard in Angular’s routing?
+ A guard decides if the navigation is allowed, resolver ensures required data is fetched before navigation completes.
+
+3) Difference between switchMap, mergeMap, concatMap, and exhaustMap??
+SwitchMap : Cancells the previous observable if the new one comes. Keeps the latest value
+Use case: Live search, typeahead (where only the latest request matters).
+If user types "an", "ang", "angu" → only the last search ("angu") API call executes.
+
+MergeMap: Subscribes to all the inner observables concurrently. Does not cancels previous ones.
+Use case: Fire multiple API calls in parallel (e.g., saving multiple form entries).
+
+concatMap: Runs one observable at a time in sequence.
+Waits for the previous one to complete before starting the next.
+Use case: Ordered API calls (e.g., save → update → notify).
+
+exhaustMap: Ignores new emissions until the current observable completes.
+Use case: Login button / form submit (avoid duplicate requests on multiple clicks).
+If user clicks the button 5 times quickly, only the first request runs, rest are ignored until it finishes.
+
+
+Angular Universal is the server side rendering for angular applications. Normally angular apps runs in the 
+client side rendering
+
+How do you share data between components?
+Parent → Child (using @Input)
+Pass data from parent component to child component.
+// child.component.ts
+import { Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'app-child',
+  template: `<p>Received: {{ data }}</p>`
+})
+export class ChildComponent {
+  @Input() data!: string;
+}
+
+// parent.component.html
+<app-child [data]="parentMessage"></app-child>
+Use case: When parent controls what child displays
