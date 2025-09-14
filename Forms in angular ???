@@ -1,0 +1,7 @@
+Template driven forms and reactive-forms
+Template driven forms - simple forms, uses ngModel for databinding, ngForm. Defined in HTNL template view.
+Use case: small forms
+
+Reactive forms : Reactive forms are defined with the typescript class usinf FormGroup and FormControl. 
+
+Use Case: Complex Forms
