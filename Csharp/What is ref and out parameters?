@@ -1,0 +1,6 @@
+What is ref and out parameters in c#??
+Both ref and out parameters are used to pass the arguments by reference
+The difference is that with ref, the variable must be initialized before passing, and the method may or may not change it.
+With out, the variable doesn’t need to be initialized before passing, but the method is required to assign a value before 
+returning
+ref is used when you want to update an existing value, while out is used when you want to return multiple values from a method.
