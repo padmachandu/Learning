@@ -1,0 +1,14 @@
+What are the directives in angular??
+
+Directives are instructions to the DOm.
+Structural directives: add or remove eements from the dom
+
+*ngIf
+*ngFor
+*ngSwitch
+
+Behavioral Directives: Change the begavior or appearance of the DOM elements. 
+
+ngClass:
+ngStyle:
+ngModel:
