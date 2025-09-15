@@ -1,2 +1,5 @@
 What is an async pipe ??
 An async pipe is used to handle asynchronous data.
+An async pipe subscribes to an observable or promise and emits the latest value
+Handles unsubscribe Automatically.
+{{ greeting | async }}
