@@ -1,0 +1,9 @@
+What are the life cycle hooks in Angular ???
+
+ngOnChanges()
+ngOninit()
+ngDoCheck()
+ngAfterContentInit()
+ngAfterContentChecked()
+ngAfterViewInit()
+ngAfterViewChecked()
