@@ -2,6 +2,49 @@ Template driven forms and reactive-forms
 Template driven forms - simple forms, uses ngModel for databinding, ngForm. Defined in HTNL template view.
 Use case: small forms
 
-Reactive forms : Reactive forms are defined with the typescript class usinf FormGroup and FormControl. 
+Simple, good for small forms.
+Uses directives (ngModel, ngForm) in HTML.
+Two-way data binding with [(ngModel)].
+Validation is added in the template using built-in validators (required, minlength, etc.).
+
+<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+  <input name="username" [(ngModel)]="user.name" required />
+  <input type="email" name="email" [(ngModel)]="user.email" required />
+  <button type="submit" [disabled]="userForm.invalid">Submit</button>
+</form>
+
+Easy to implement, but less scalable for complex forms.
+
+Reactive forms : Reactive forms are defined with the typescript class usinf FormGroup and FormControl and FormBUilder. 
+
+More powerful and scalable (preferred in real projects).
+Form structure is defined in the component class using FormControl and FormGroup.
+Validation is added in TypeScript.
+Easy to test and manage complex forms.
+
+import { Component } from '@angular/core';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
+
+@Component({
+  selector: 'app-reactive-form',
+  template: `
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+      <input formControlName="username" placeholder="Username" />
+      <input formControlName="email" placeholder="Email" />
+      <button type="submit" [disabled]="userForm.invalid">Submit</button>
+    </form>
+  `
+})
+export class ReactiveFormComponent {
+  userForm = new FormGroup({
+    username: new FormControl('', Validators.required),
+    email: new FormControl('', [Validators.required, Validators.email])
+  });
+
+  onSubmit() {
+    console.log(this.userForm.value);
+  }
+}
 
 Use Case: Complex Forms
+Preferred for enterprise apps with dynamic forms.
