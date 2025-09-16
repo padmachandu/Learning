@@ -1,1 +1,40 @@
+Scopes in Dependency Injection (DI) Transient, Scoped and Singleton ??
 
+Asp.Net core DI supports 3 lifetimes AddTransient, AddScoped and AddSingleton
+AddTransient : Creates a new instance every time it's requested.
+AddScoped: Creates one instance per HTTP request.
+AddSingletone: Creates single instance per application lifetime.
+
+What is JWT and how does it work ??
+
+JWT (Json Web Token)
+It'a an open standard for securely tranmitting the data between the parties as a JSON object.
+Used for authentication and authorization in modern web applications. (Especially REST API's) 
+
+Structure of a JWT:
+A JWT has 3 parts seperated by dot .
+
+Header.Payload.Signature
+Header - Algorithm & token type
+Payload - Claims (UserInfo, Roles, Expiry)
+Signature - Created using Header + Payload + Secret Key
+How JWT Works (Authentication Flow)
+
+What is Middleware?
+Middleware is a software component that processes the HTTP requests and responses in the pipeline.
+
+How Middleware Works (Pipeline Flow)
+Request → [Middleware 1] → [Middleware 2] → [Middleware 3] → Endpoint
+Response ← [Middleware 1] ← [Middleware 2] ← [Middleware 3] ← Endpoint
+
+Built-in Middleware Examples
+
+UseRouting → Matches route.
+UseAuthentication → Validates user.
+UseAuthorization → Checks user permissions.
+UseEndpoints → Executes matched controller/action.
+UseStaticFiles → Serves CSS/JS/images.
+
+Why do you use an interface???
+
+Difference between const, readonly, static.
