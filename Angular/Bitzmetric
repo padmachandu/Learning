@@ -1,0 +1,54 @@
+Programming Question
+
+Consider below is the service to get information related to student
+
+export interface IStudentService { 
+getStudent(name: string): Observable<IStudent>;
+getStudentAddress(studentId: number): Observable<IStudentAddress>; 
+getStudentLatestMarksheet(studentId: number): Observable<IStudentMarksheet>; 
+} 
+Use above service and write a code snippet to get student detail with address and marksheet as one object based on student name.
+
+Answer)
+export interface IStudent {
+  id: number;
+  name: string;
+}
+
+export interface IStudentAddress {
+  city: string;
+  state: string;
+}
+
+export interface IStudentMarksheet {
+  subject: string;
+  marks: number;
+}
+
+export interface IStudentDetail {
+  student: IStudent;
+  address: IStudentAddress;
+  marksheet: IStudentMarksheet;
+}
+
+export class StudentFacade {
+  constructor(private studentService: IStudentService) {}
+
+  getStudentDetail(name: string): Observable<IStudentDetail> {
+    return this.studentService.getStudent(name).pipe(
+      switchMap(student =>
+        forkJoin({
+          address: this.studentService.getStudentAddress(student.id),
+          marksheet: this.studentService.getStudentLatestMarksheet(student.id)
+        }).pipe(
+          map(result => ({
+            student,
+            address: result.address,
+            marksheet: result.marksheet
+          }))
+        )
+      )
+    );
+  }
+}
+
