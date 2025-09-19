@@ -1,1 +1,27 @@
+.NET / C# interview Questions
+
+Difference between abstract class & interface??
+1. Abstract class contains both  
+DECLARATION & DEFINITION of methods.
+
+Mostly Interfaces containDECLARATION of 
+methods. From C# 8.0 definition is also 
+possible
+
+2. Abstract class keyword: ABSTRACT
+Interface keyword: INTERFACE
+
+3. Abstract class does not support 
+multiple inheritance
+Interface supports multiple inheritance.
+
+4. Abstract class can have constructors.
+Interface do not have constructors.
+
+2. What are delegates, Func, Action, Predicate?
+
+what is a delegate ?
+Func: 
+Action:
+Predicate:
 
