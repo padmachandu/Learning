@@ -1,0 +1,20 @@
+What is the differece between observables vs promises??
+
+observables vs promises for handling asynchronous functionality.
+
+Observables:
+1) Observables is hvaving 3 callback functions
+
+Success
+Error
+Complete
+2)Observables are lazy
+
+
+
+Promises:
+
+1) Promises has 2 call back 
+Success
+Error
+2) promises are not lazy , promises are eager 
