@@ -3,7 +3,10 @@ What is lazy loading in Angular ??
 Lazy loading in angular is a technique where feature modules are loaded only when needed, instead of the application startup.
 We configure it in the router using LoadChildren
 
-
+const routes: Routes = [
+{ path: 'customers',
+loadChildren: () => import('./customers/customers.module').then(m => m.CustomersModule) }
+];
 
 Benefits of Lazy Loading
 
