@@ -13,7 +13,7 @@ Angular Interview Questions
 11. Simple code to write service and communicate with component?
 12. what are all the files gets generated when you build the angular application
 13. What is the difference between observables and promises ?
-14.
+14. 
 
 c# .net interview Questions
 ---------------------------
@@ -26,6 +26,7 @@ c# .net interview Questions
 7. Try catch catch will multiple catch blocks execute or immediate catch block will execut ??
 8. How many loggers have you implemented ??
 9. Global exception handling?? How to implement it ??
-10. Status codes in c# 
+10. Status codes in c#
+11. can we really need to override method in method overriding / run time polymorphism ??
 
 
