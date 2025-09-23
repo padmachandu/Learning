@@ -1,1 +1,25 @@
+1. .Net Framework VS .Net core?
+2. Angular vs Angular js ?
+3. Component communication parent -> child ???
+example: Student(Parent) studentDetails-> Child Component
+4. TestMethod - How to do a testing. How to pass a boolean variable to the Test Method ??
+5. What is an event and what is pub-sub patterns??
+6. What is a middleware in asp.net core ? What are inbuilt middlewares? How to write a custom middleware??
+7. CQRS Pattern ?? How to implement it ?
+8. What is transpilation and how it works ??
+9. How to do pagination in sql query usin LIMIT and Offset()
+10. Design Pattern pub-sub patterns ?
+
+ABB - Angular Interview Questions
+---------------------------------
+1. Difference between behaviorsubject vs subject ?
+2. Observables and how to write observables ?
+3. How to share the data between component to component without parent child relationship??
+4. Reactive forms vs template driven forms ??
+5. What is a Pipe??
+6. Services and how to create services using observables ??
+7. Angular js vs angular differences??
+8. Dynamic forms in angular ??
+9. Have you implemented signal R ??
+10.
 
