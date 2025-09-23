@@ -1,1 +1,31 @@
+Angular Interview Questions 
+---------------------------
+1. How to run an angular application?
+2. npm install what files will get generated newly?
+3. Lifecycle hooks in angular ??
+4. Constructor and ngOninit()?? can we move the ngonint initialization code to constructor ??
+5. What is an activatedRoute??
+6. How to navigate from one component to another component???
+7. What is dependency injection in angular ??
+8. using services how to communicate through components?
+9. What is jasmine and karma?? Have you done testing in angular ?? 
+10. Simple code to implement template driven forms ?
+11. Simple code to write service and communicate with component?
+12. what are all the files gets generated when you build the angular application
+13. What is the difference between observables and promises ?
+14.
+
+c# .net interview Questions
+---------------------------
+1. What happens when you build an application? Ctrl Shift B
+2. What is a middleware? Default middlewares?
+3. What is the difference between app.run() vs app.use??
+4. Dependency Injection in c#??
+5. what are all the loggers have you used in our application??
+6. How do you implemented exception handling in c# without try catch?
+7. Try catch catch will multiple catch blocks execute or immediate catch block will execut ??
+8. How many loggers have you implemented ??
+9. Global exception handling?? How to implement it ??
+10. Status codes in c# 
+
 
