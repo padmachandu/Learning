@@ -1,1 +1,12 @@
+Run use and map methods ?
+
+Extension methods in .net core.
+
+Use(): Use method will execute next middleware or line in sequence. Run the method first and then pass the control to next
+method  in the sequence or pipeline.
+
+Run(): 
+Run method will terminate the chain.
+No other middleware methods run after this.
+Should be placed at the end of any pipeline.
 
