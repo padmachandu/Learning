@@ -18,3 +18,20 @@ Promises:
 Success
 Error
 2) promises are not lazy , promises are eager 
+
+Promises and Observables both handle the asynchronous call only.
+Here are the differences between them:
+
+Observable
+------------
+Emits multiple values over a period of time
+Is not called until we subscribe to the Observable
+Can be canceled by using the unsubscribe() method
+Provides the map, forEach, filter, reduce, retry, and retryWhen operators
+
+Promise
+---------
+Emits only a single value at a time
+Calls the services without .then and .catch
+Cannot be canceled
+Does not provide any operators
