@@ -5,5 +5,5 @@ Access Modifiers in c# ???
 4. internal: class members can be accessed anywhere with in the assembly not outside the assembly.
 5. protected internal: class members can be accessed anywhere inside the same assembly but only by the derived classes outside
 the assembly.
-6. private protected : class members can be accessed by derived classes with in the same assembly and can b accessed only by 
+6. private protected : class members can be accessed by derived classes with in the assembly and can b accessed only by 
 the parent in the outside of the assembly.
