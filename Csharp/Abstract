@@ -1,0 +1,24 @@
+Abstract keyword in c# ?
+
+Abstarct is a keyword used with classes and methods.
+
+Abstarct class 
+can't be instantiated directly
+can contain both abstract(no-implementation) and non-abstract methods (with implementation)
+act as a base class
+
+Virtual override sealed keywords in c# ??
+
+Virtual - 
+used in a base class method
+Allows method to be overridden in the derived classes
+Provides default implementation
+
+Override - 
+used in derived classes
+overrides virtual/abstract method from base class
+provides new implementation.
+
+sealed - 
+Predvents further overriding of a method that was overwritten.
+can also seal a class preventing further inheritance.
