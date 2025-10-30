@@ -1,1 +1,53 @@
-Asp.net core is a cross-platform, high-performance, open source framework for building modern and cloud-enabled web applications and services.
+Asp.net core is a cross-platform, 
+high-performance, open source framework for building modern and cloud-enabled web applications and services.
+
+Cross-platform - 
+Asp.net core supports windows, linux and mac.
+can be hosted on different servers. Supports kestrel, IIS, NGINX, Docker, Apache.
+It's open-source. 
+Cloud-enabled - it supports microsoft azure 
+There are totally 4 parts of Asp.Net Core
+Asp.Net Core MVC - Medium to Complex applications
+Asp.net Core Web API - Used to create RestFul Services. 
+Asp.net Core Razor Pages - For creating simple and page-focused web applications.
+Asp.net Core Blazor - For creating web applications with C# code both on the client-side and server-side. 
+
+Web Forms VS ASP.net MVC and Asp.Net Core
+
+Web Forms - 
+Performance issues due to server-events and view state. ( Released in 2002)
+Unit testing is difficult
+Windows only
+Not cloud friendly
+Not-open source
+Event-driven programming approach
+
+Asp.net Mvc(2009)
+Model View Controller pattern
+Asp.net mvc 
+slower performance partially
+It is difficult to host the application in other 
+Windows only
+Not 100% cloud friendly
+Open-source
+MVC Pattern
+Dpendency Injection
+
+Asp.net core (2016)
+Faster performance 
+Cross-platform
+Cloud friendly (Azure)
+Open-source
+MVC pattern
+Built in support for Dependency Injection
+
+
+
+
+
+
+
+
+
+
+
