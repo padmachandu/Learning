@@ -24,7 +24,7 @@ c# .net interview Questions
 4. Dependency Injection in c#??
 5. what are all the loggers have you used in our application??
 6. How do you implemented exception handling in c# without try catch?
-7. Try catch catch will multiple catch blocks execute or immediate catch block will execut ??
+7. Try catch catch will multiple catch blocks execute or immediate catch block will execute ??
 8. How many loggers have you implemented ??
 9. Global exception handling?? How to implement it ??
 10. Status codes in c#
