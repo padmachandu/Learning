@@ -1,1 +1,54 @@
+What interviewers ACTUALLY expect (very important)
+For each subject, they expect this depth only:
 
+What it is → Why it’s used → How you used it → One example → One pitfall
+------------------------------------------------------------------------
+You need strong basics + depth in common areas + confidence in explanation
+
+Most interviews test:
+How you think
+How you explain
+How you’ve used things in real projects
+Not how much you memorized.
+
+WHAT TO FOCUS ON (Subject-wise)
+1️⃣ C# (MOST IMPORTANT – foundation)
+
+Focus on 20–25 core topics only
+
+Must-focus areas
+
+OOP (real-world examples)
+
+SOLID (1 example each – no theory dump)
+
+Value vs Reference types
+
+struct vs class
+
+interface vs abstract class
+
+async / await
+
+Task vs Thread
+
+Exception handling
+
+Collections
+
+LINQ (how + when)
+
+Memory basics (stack vs heap)
+
+const vs readonly
+
+IDisposable, using
+
+Delegates, Func, Action (basic)
+
+Nullable reference types
+
+Records (basic idea)
+
+👉 Depth rule:
+Explain each in 2–3 minutes max
