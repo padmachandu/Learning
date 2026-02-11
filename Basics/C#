@@ -1,1 +1,6 @@
 
+Class vs Struct vs Record 
+
+Class is a reference type stored on heap and struct is a value type stored on stack. 
+
+Value types - passed by value - 
