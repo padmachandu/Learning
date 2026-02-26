@@ -1,2 +1,3 @@
 What is DI (Dependency Injection) in angular??
-DI is a technique where the classes receives it's dependencies from an external resources rather than class creating them by itself.
+DI is a technique where the classes receives it's dependencies from an external resources rather than class
+creating them by itself.
